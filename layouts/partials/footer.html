@@ -1,2 +1,2 @@
-{{ if ne .Site.Params.hideCopyrightNotice true }}{{ replace .Site.Copyright "{year}" now.Year }}{{ end }}
+{{ if ne .Site.Params.hideCopyrightNotice true }}{{ .Site.Copyright }}{{ end }}
 {{ if ne .Site.Params.hideMadeWithLine true }}Made with <a href="https://github.com/janraasch/hugo-bearblog/">Hugo ʕ•ᴥ•ʔ Bear</a>{{ end }}
